@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Per Bag Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Price Per lb/kg Calculator</h1>
+
+        <div class="input-group">
+            <label for="bigBagWeight">Big Bag Weight (lbs or kg):</label>
+            <input type="number" id="bigBagWeight" placeholder="Enter big bag weight">
+        </div>
+
+        <div class="input-group">
+            <label for="bigBagPrice">Big Bag Price ($):</label>
+            <input type="number" id="bigBagPrice" placeholder="Enter big bag price">
+        </div>
+
+        <button onclick="calculatePricePerUnit()">Calculate Price Per Unit</button>
+
+        <h2 id="result"></h2>
+
+        <div class="input-group">
+            <label for="smallBagWeight">Small Bag Weight (lbs or kg):</label>
+            <input type="number" id="smallBagWeight" placeholder="Enter small bag weight">
+        </div>
+
+        <button onclick="calculateCostPerBag()">Calculate Cost Per Bag</button>
+
+        <h2 id="bagResult"></h2>
+
+        <div class="instructions">
+            <h3>Instructions for POS System:</h3>
+            <ol>
+                <li>Calculate the price per pound or kilogram of the big bag using the calculator above.</li>
+                <li>Scan each small bag at the POS system.</li>
+                <li>Select "Change Price" on the POS system and input the calculated price for the small bag.</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Amy von Deschwanden. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
